@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/okhsat/mini-user-api.git"
   },
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "author": "Okhtay Sattari",
   "type": "commonjs",
   "main": "index.js",
