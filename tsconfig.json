@@ -1,0 +1,33 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "rootDir": "./src",              /* Specify the root folder within your source files. */
+    "baseUrl": "./src",              /* Specify the base directory to resolve non-relative module names. */
+    "paths": {                       /* Specify a set of entries that re-map imports to additional lookup locations. */
+      "@config/*": ["config/*"],
+      "@routes/*": ["routes/*"],
+      "@controllers/*": ["controllers/*"],
+      "@services/*": ["services/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@types/*": ["types/*"],
+      "@lib/*": ["lib/*"],
+      "@app/*": ["app/*"],
+      "@tests/*": ["tests/*"],
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "jest.config.ts"
+  ]
+}

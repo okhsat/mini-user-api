@@ -1,0 +1,26 @@
+> npm init -y
+> npm install express jsonwebtoken zod dotenv morgan
+> npm install -D \
+typescript tsx ts-node \
+@types/express @types/jsonwebtoken @types/node @types/jest @types/supertest @types/morgan \
+jest ts-jest supertest tsconfig-paths
+> npx tsc --init
+> npx ts-jest config:init
+> mkdir -p \
+src/{config,controllers,middlewares,routes,services,lib,types,tests/{unit,integration}}
+> touch \
+src/app.ts \
+src/server.ts \
+src/config/env.ts \
+src/types/user.ts \
+src/services/user.service.ts \
+src/controllers/user.controller.ts \
+src/middlewares/{auth.middleware.ts,validate.middleware.ts,error.middleware.ts} \
+src/routes/user.routes.ts \
+src/lib/jwt.ts \
+src/tests/unit/user.service.test.ts \
+src/tests/integration/user.api.test.ts
+> touch .env
+> git init
+> git branch -m master
+> touch .gitignore
